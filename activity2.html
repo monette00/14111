@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCM - Delicious Recipes Collection</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           background-image: url('img/mcm.webp');
+            color: #111111;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #ffcc99;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header img {
+            width: 60px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 2.5rem;
+            color: #ec0505;
+           font-family: cursive;
+           font-style: italic;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-family: cursive;
+            font-style: italic;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between; 
+            padding: 14px 20px;
+           
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            background-color: #ff6347;
+            border-radius: 5px;
+        }
+        .search-container {
+            display: flex;
+        }
+        .search-container input {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        .search-container button {
+            padding: 8px 12px;
+            background-color: #ff6347;
+            border: none;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+           font-style: oblique;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .key-statement {
+            font-size: 2rem;
+            color: #f8e006;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            color: #f1f1f0;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #ffcc99;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="img/logo.webp" alt="MCM Logo">
+        <h1>MCM - Delicious Recipes Collection</h1>
+        <p>Explore our handpicked recipes and make your cooking journey delightful!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="recipes.html">Food Menu Recipes</a>
+            <a href="references.html">References</a>
+        </div>
+        <div class="search-container">
+            <form action="search_results.html" method="get">
+                <input type="text" name="q" placeholder="Search recipes or references..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Center Visual Content -->
+    <div class="container">
+        <img src="img/mcm.webp" alt=" ">
+        <h2 class="key-statement">"Making Cooking Easy, Fun, and Tasty!"</h2>
+        <p class="intro-text">
+            Welcome to MCM Delicious Recipes, your one-stop destination for delightful cooking ideas. Discover recipes tailored to every occasion and skill level. Whether you're a beginner or a pro, our recipes ensure tasty meals for everyone!
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 MCM - Delicious Recipes. Created by Monette Aquino.</p>
+        <p>Contact: 
+            <a href="mailto:monetteaquino0801@gmail.com">monetteaquino0801@gmail.com</a> | 
+            Mobile: +63 960 3747 506
+        </p>
+        <p>Follow us on: 
+            <a href="https://www.facebook.com/monette.ebit.aquino">Facebook</a> | 
+            <a href="https://www.instagram.com/babylabzkita">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

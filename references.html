@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header and Footer */
+        header, footer {
+            background-color: #ffcc99;
+            color: #333;
+            text-align: center;
+            padding: 15px 0;
+            font-weight: bold;
+            border-bottom: 2px solid #ff6347;
+        }
+        header img {
+            height: 80px;
+        }
+
+        footer {
+            border-top: 2px solid #ff6347;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ff6347;
+            color: #fff;
+        }
+
+        nav .search-container {
+            float: right;
+            padding: 10px;
+        }
+
+        nav .search-container input[type="text"] {
+            padding: 8px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        nav .search-container button {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        nav .search-container button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Container for Content */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-image: url('img/mcm.webp');
+            background-position: 500%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f72804;
+            font-size: 2rem;
+        }
+
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .container li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .container li:hover {
+            background-color: #ffcc99;
+            transform: scale(1.02);
+        }
+
+        .container a {
+            color: #fa2802;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container a:hover {
+            color: #ff4500;
+        }
+
+        /* Footer */
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a, nav .search-container {
+                float: none;
+                text-align: center;
+            }
+
+            nav .search-container {
+                padding: 5px;
+            }
+
+            nav .search-container input[type="text"] {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="img/logo.webp" alt="MCM Logo">
+        <h1>References</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="activity2.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="recipes.html">Food Menu Recipes</a>
+        
+        <div class="search-container">
+            <form action="search_results.html" method="get">
+                <input type="text" name="q" placeholder="Search recipes or references..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>References and External Sources</h1>
+        <ul>
+            <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></li>
+            <li><a href="https://www.knorr.com" target="_blank">Knorr</a></li>
+            <li><a href="https://www.maggi.ph" target="_blank">Maggi</a></li>
+            <li><a href="https://www.shutterstock.com" target="_blank">Shutterstock</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MCM - Delicious Recipes. Created by Monette Aquino.</p>
+        <p>Contact: 
+            <a href="mailto:monetteaquino0801@gmail.com">monetteaquino0801@gmail.com</a> | 
+            Mobile: +63 960 3747 506
+        </p>
+        <p>Follow us on: 
+            <a href="https://www.facebook.com/monette.ebit.aquino">Facebook</a> | 
+            <a href="https://www.instagram.com/babylabzkita">Instagram</a>
+        </p>
+        </footer>
+</body>
+</html>

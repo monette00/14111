@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancit Canton</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background-color: #fffaf0;
+        color: #333;
+    }
+
+    header, footer {
+        background-color: #ff8552;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav {
+        background-color: #333;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #ff6347;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-container input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 5px;
+        outline: none;
+    }
+
+    .search-container button {
+        padding: 8px 12px;
+        background-color: #ff6347;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .search-container button:hover {
+        background-color: #cc4c39;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    img {
+        display: block;
+        max-width: 20%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: #ff8552;
+        margin-bottom: 10px;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+
+    ul li, ol li {
+        margin-bottom: 8px;
+    }
+
+    a {
+        color: #ff6347;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <header>
+        <h1>Pancit Canton</h1>
+    </header>
+
+    <nav>
+        <a href="index2.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="recipes.html">Food Menu Recipes</a>
+        <a href="references.html">References</a>
+        <div class="search-container">
+            <form action="search_results.html" method="get">
+                <input type="text" name="q" placeholder="Search recipes or references..." required>
+                <button type="submit">Search</button>
+            </form>
+    </nav>
+
+    <div class="container">
+        <img src="img/Pancit Canton.jpg" alt="Pancit Canton">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>500g Pancit Canton noodles</li>
+            <li>2 tablespoons cooking oil</li>
+            <li>1 onion, chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1/2 lb pork (sliced into thin strips)</li>
+            <li>1/2 lb chicken breast (sliced into thin strips)</li>
+            <li>1/2 cup shrimp (peeled and deveined)</li>
+            <li>1/2 cup sliced carrots</li>
+            <li>1/2 cup snow peas</li>
+            <li>1/2 cup bell peppers (sliced)</li>
+            <li>1 cup chicken broth</li>
+            <li>3 tablespoons soy sauce</li>
+            <li>1 tablespoon oyster sauce</li>
+            <li>Salt and pepper to taste</li>
+            <li>2 tablespoons chopped green onions for garnish</li>
+            <li>Lemon wedges for serving</li>
+        </ul>
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Cook the Pancit Canton noodles according to package instructions. Drain and set aside.</li>
+            <li>In a large pan or wok, heat oil over medium heat. Sauté onions and garlic until fragrant.</li>
+            <li>Add pork and chicken, cooking until browned. Add shrimp and cook until pink.</li>
+            <li>Add carrots, snow peas, and bell peppers, stir-frying for 2-3 minutes.</li>
+            <li>Pour in chicken broth, soy sauce, and oyster sauce. Stir to combine and bring to a simmer.</li>
+            <li>Add the cooked Pancit Canton noodles, tossing to coat in the sauce. Season with salt and pepper to taste.</li>
+            <li>Cook for another 2-3 minutes until the noodles are well combined and heated through.</li>
+            <li>Garnish with green onions and serve with lemon wedges.</li>
+        </ol>
+        <h3>References and Sources:</h3>
+        <ul>
+            <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></li>
+            <li><a href="https://www.knorr.com" target="_blank">Knorr</a></li>
+            <li><a href="https://www.maggi.ph" target="_blank">Maggi</a></li>
+            <li><a href="https://www.shutterstock.com" target="_blank">Shutterstock</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 MCM - Delicious Recipes. Created by Monette Aquino.</p>
+        <p>Contact: 
+            <a href="mailto:monetteaquino0801@gmail.com">monetteaquino0801@gmail.com</a> | 
+            Mobile: +63 960 3747 506
+        </p>
+        <p>Follow us on: 
+            <a href="https://www.facebook.com/monette.ebit.aquino">Facebook</a> | 
+            <a href="https://www.instagram.com/babylabzkita">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

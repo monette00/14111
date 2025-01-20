@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - MCM Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header and Footer */
+        header, footer {
+            background-color: #ffcc99;
+            color: #333;
+            text-align: center;
+            padding: 15px 0;
+            font-weight: bold;
+            border-bottom: 2px solid #ff6347;
+        }
+
+        footer {
+            border-top: 2px solid #ff6347;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ff6347;
+            color: #fff;
+        }
+
+        nav .search-container {
+            float: right;
+            padding: 10px;
+        }
+
+        nav .search-container input[type="text"] {
+            padding: 8px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        nav .search-container button {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        nav .search-container button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Container for Content */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6347;
+            font-size: 2rem;
+        }
+
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .container li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .container li:hover {
+            background-color: #ffcc99;
+            transform: scale(1.02);
+        }
+
+        .container a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container a:hover {
+            color: #ff4500;
+        }
+
+        /* Footer */
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a, nav .search-container {
+                float: none;
+                text-align: center;
+            }
+
+            nav .search-container {
+                padding: 5px;
+            }
+
+            nav .search-container input[type="text"] {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Location - MCM Restaurant/Recipe Service</h1>
+    </header>
+
+    <nav>
+        <a href="index2.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="location.html">Location</a>
+        <a href="recipes.html">Food Menu Recipes</a>
+        <a href="references.html">References</a>
+        <div class="search-container">
+            <form action="search_results.html" method="get">
+                <input type="text" name="q" placeholder="Search recipes or references..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Visit Us At:</h2>
+        <div class="location-details">
+            <h3>Address:</h3>
+            <p><strong>335 Brgy. Buenglat, San Carlos City, Pangasinan</strong><br>
+            Zip Code: 2420</p>
+            
+            <h3>Directions:</h3>
+            <ul>
+                <li>From the city center of San Carlos, head north towards Brgy. Buenglat.</li>
+                <li>Pass by the San Carlos City Hall, and continue straight.</li>
+                <li>Turn right when you reach the main junction, and continue along the road.</li>
+                <li>The restaurant will be on your left side, just before you reach the local market.</li>
+            </ul>
+            
+            <h3>Landmarks:</h3>
+            <ul>
+                <li><strong>San Carlos City Hall</strong> – The restaurant is located near this landmark.</li>
+                <li><strong>Local Market</strong> – A well-known spot close to the restaurant.</li>
+            </ul>
+        </div>
+        
+        <!-- Embedded Google Map -->
+        <div class="map-container">
+            <h3>Find Us on the Map:</h3>
+            <!-- Embed Google Map iframe with your location -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.582702351859!2d122.97694761609163!3d15.979616949426854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b001dc2992a9b5%3A0x8b6eb601c3205b8f!2s335%20Brgy.%20Buenglat%2C%20San%20Carlos%20City%2C%20Pangasinan%202420!5e0!3m2!1sen!2sph!4v1674177439459!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 MCM Restaurant/Recipe Service. Created by Monette Aquino.</p>
+    </footer>
+</body>
+</html>

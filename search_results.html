@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #ffcc99;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .results ul {
+            list-style: none;
+            padding: 0;
+        }
+        .results li {
+            margin: 10px 0;
+        }
+        .results a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .results a:hover {
+            color: #ff4500;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Search Results</h1>
+    </header>
+    <div class="container">
+        <!-- Dynamic Query Display -->
+        <p>Your search query: <strong id="query-display">[Display query here]</strong></p>
+        <div class="results">
+            <h2>Results:</h2>
+            <ul id="results-list">
+                <li>No results found. Please try another search query.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 MCM - Delicious Recipes. Created by Monette Aquino.</p>
+    </footer>
+
+    <script>
+        // Get query from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+
+        // Update the query display
+        document.getElementById('query-display').textContent = query || "No query provided";
+
+        // Sample data for search
+        const recipes = [
+            { name: "Pork Adobo", url: "activity1-p4.html" },
+            { name: "Chicken Inasal", url: "activity1-p2.html" },
+            { name: "Sinigang na Baboy", url: "activity1-p5.html" },
+            { name: "Beef Kaldereta", url: "activity1-p1.html" },
+            { name: "Pancit Canton", url: "activity1-p3.html" }
+        ];
+
+        const references = [
+            { name: "Wikipedia", url: "https://www.wikipedia.org/" },
+            { name: "Knorr", url: "https://www.knorr.com" },
+            { name: "Maggi", url: "https://www.maggi.ph" },
+            { name: "Shutterstock", url: "https://www.shutterstock.com" }
+        ];
+
+        // Find results matching the query
+        const resultsList = document.getElementById('results-list');
+        resultsList.innerHTML = ""; // Clear default message
+
+        const matchedRecipes = recipes.filter(item =>
+            item.name.toLowerCase().includes(query?.toLowerCase() || "")
+        );
+
+        const matchedReferences = references.filter(item =>
+            item.name.toLowerCase().includes(query?.toLowerCase() || "")
+        );
+
+        if (matchedRecipes.length > 0) {
+            const recipeHeader = document.createElement("h3");
+            recipeHeader.textContent = "Recipes:";
+            resultsList.appendChild(recipeHeader);
+
+            matchedRecipes.forEach(recipe => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a href="${recipe.url}">${recipe.name}</a>`;
+                resultsList.appendChild(listItem);
+            });
+        }
+
+        if (matchedReferences.length > 0) {
+            const referenceHeader = document.createElement("h3");
+            referenceHeader.textContent = "References:";
+            resultsList.appendChild(referenceHeader);
+
+            matchedReferences.forEach(reference => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a href="${reference.url}" target="_blank">${reference.name}</a>`;
+                resultsList.appendChild(listItem);
+            });
+        }
+
+        if (matchedRecipes.length === 0 && matchedReferences.length === 0) {
+            resultsList.innerHTML = "<li>No results found. Please try another search query.</li>";
+        }
+    </script>
+</body>
+</html>
